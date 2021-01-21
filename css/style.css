@@ -1,0 +1,697 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+    color: #212226;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+/*======--------NAVBAR-----=======*/
+.navbar {
+    padding: 30px 0 20px 0;
+}
+.collapse{
+    padding: 0 60px;
+    text-align: center;
+}
+.collapse > ul > li {
+    padding: 0 28px;
+}
+
+.collapse > ul > li > a {
+    font-family: "Montserrat", "Raleway", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.collapse > ul > li > a:hover,
+.collapse > ul > li > a:focus {
+    color: blue;
+}
+
+/*white navigation on scroll*/
+.white-nav-top {
+    background: #fff;
+    padding: 10px 0;
+    -webkit-box-shadow: 0 8px 6px -9px #999;
+    box-shadow: 0 8px 6px -9px #999;
+    z-index: 2;
+}
+
+.white-nav-top .collapse > ul > li > a {
+    color: #212226;
+}
+
+.white-nav-top .collapse > ul > li > a:hover,
+.collapse > ul > li > a:focus {
+    color: blue;
+}
+
+.navabar-brand {
+    padding: 13px 15px;
+}
+
+
+/* transperent navigation bar on scroll*/
+#trans-nav-bar {
+    color: rgba(192, 192, 192, 0.9);
+    padding: 10px 0;
+    -webkit-box-shadow: 0 8px 6px -9px #999;
+    box-shadow: 0 8px 6px -9px #999;
+    z-index: 2;
+}
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #F8F9FA url('pre.gif') no-repeat center;
+    z-index: 9999;
+}
+
+/*======--------Hero Section-----=======*/
+.hero-section {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-img-one {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../image/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+.hero-img-two {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../image/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+.hero-img-three {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../image/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+.hero-img-one-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+    background-color: rgba(26, 101, 158, .2);
+}
+
+.hero-text {
+    z-index: 3;
+    padding: 280px 90px 40px 90px;
+}
+
+.hero-text-top {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 40px;
+    align-items: center;
+}
+
+#chess-logo {
+    font-size: 120px;
+    font-weight: bold;
+    color: #fff;
+    border-right: 1px solid #464D52;
+}
+.main-text h1{
+    font-size: 80px;
+    font-weight: 300;
+    letter-spacing: 8px;
+    line-height: 0.9;
+}
+.main-text p{
+    font-size: 20px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+#text-highlight{
+    color: #FF6B35;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    display: block;
+}
+
+.hero-text-bottom{
+    margin: 60px 0;
+}
+.hero-text-bottom a{
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 38px;
+    border-radius: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+.hero-text-bottom a:nth-child(1){
+    background-color: #FF6B35;
+    border: 2px solid #FF6B35;
+    color:#333;
+}
+.hero-text-bottom a:nth-child(1):hover{
+    background-color: transparent;
+    color: #FF6B35;
+    transition: .3s ease-in;
+}
+.hero-text-bottom a:nth-child(2){
+    background-color:transparent;
+    color:#fff;
+    border: 2px solid #fff;
+}
+.hero-text-bottom a:nth-child(2):hover{
+    background-color:#fff;
+    color:#333;
+    transition: .3s ease-in;
+}
+
+/*meet chess pieces*/
+
+#chess-item h5 {
+    margin-right: 20px;
+}
+
+section {
+    background: #fff;
+    overflow: hidden;
+}
+
+#home {
+    width: 100%;
+}
+
+#home p {
+    color: white;
+    font-size: 25px;
+    font-family: fantasy sans-serif;
+}
+
+/*------ABOUT SECTION-------*/
+/* #about {
+    background-color: #F1F1F1;
+}*/
+/*------Content Boxes-------*/
+.content-box-lg {
+    padding: 120px 0px;
+
+}
+
+.content-box-md {
+    padding: 100px 0;
+
+}
+
+/*------ Vertical Heading-------*/
+
+.vertical-heading h5 {
+    color: #588c7e;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 4px;
+    display: inline-block;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: relative;
+    top: 30px;
+    left: -75px;
+
+}
+
+.vertical-heading h2 {
+    margin: 0 0 0 30px;
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 45px;
+}
+
+/*------ Horizontal Heading-------*/
+
+.horizontal-heading {
+    margin-bottom: 80px;
+}
+
+.horizontal-heading h5 {
+    font-size: 20px;
+    color: #070719;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 10px;
+
+}
+
+.horizontal-heading h2 {
+    font-size: 42px;
+    line-height: 45px;
+    font-weight: 100;
+    margin: 0;
+}
+
+/*------BUTTON-------*/
+.btn-general {
+    font-family: "Raleway" sans-serif;
+    border-radius: 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 6px;
+    padding: 12px 46px 12px 46px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+
+}
+
+
+/*------ About 1-------*/
+
+#about-right p{
+    font-size: 18px;
+     font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+}
+
+#about-bottom {
+    margin-top: 60px;
+}
+
+#about-bottom img {
+    margin: 0 auto;
+
+}
+
+.vertical-heading p {
+    margin: 50px 20px;
+}
+
+#link ul {
+    list-style-type: none;
+}
+
+/*------ Chess Statement-------*/
+#statement {
+    background: url("../image/statement.jpg")no-repeat fixed center;
+    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;*/
+}
+
+#statement .content-box-bg {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#chess-statement h3 {
+    color: #fff;
+    font-size: 28px;
+    line-height: 45px;
+
+}
+
+#chess-statement p {
+    font-style: bold;
+    font-size: 14px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+/*chessrule-part1*/
+#chess-rules-1 img {
+    margin: 30px 0;
+
+}
+
+.rule {
+    margin: 0;
+}
+
+#rule-border {
+    border-bottom: 1px solid #909090;
+}
+
+.rule-border {
+    border-bottom: 1px solid #909090;
+    margin-top: 28px;
+}
+
+#special-rule {
+    border-bottom: 1px solid #909090;
+
+}
+
+#margin {
+    margin: 5px 0;
+}
+
+.rule .icon {
+    font-size: 42px;
+    margin: 0;
+    -webkit-transition: all 400ms linear;
+    transition: all 400ms linear;
+
+}
+
+.rule:hover .icon {
+    color: #80ced6;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.rule:hover h3 {
+    color: #80ced6;
+}
+
+.rule h3 {
+    color: #212226;
+    margin: 0 0 6px 0;
+}
+
+.rule p {
+    line-height: 24px;
+    margin-top: 10px;
+
+}
+
+
+
+/*Ranking Section*/
+#rank1 {
+    border-bottom: 1px solid #909090;
+}
+
+#rank1 img {
+    margin-bottom: 20px;
+}
+
+/*Blog Section*/
+
+#blog {
+    background: #f4f4f4;
+}
+
+#blog-left p {
+    margin: 25px 0;
+
+}
+
+.blog-right h6 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: center;
+    vertical-align: center;
+
+    border-bottom: 1px solid #e6e2d3;
+
+}
+
+.blog-right h4 {
+    font-size: 20px;
+    text-align: center;
+}
+
+#use-link {
+    text-align: center;
+
+}
+
+
+.blog-post {
+    background: #fff;
+    padding: 20px;
+    -wekit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+
+
+}
+
+.blog-post h4 {
+    line-height: 40px;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.blog-post > p {
+    line-height: 24px;
+    margin: 0;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.blog-post a {
+    display: inline-block;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #80ced6;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.blog-post a:hover {
+    color: #034f84;
+}
+
+#hover-blog-1:hover {
+    background-color: #454140;
+    color: aliceblue;
+
+}
+
+#hover-blog-2:hover {
+    background-color: #454140;
+    color: aliceblue
+}
+
+.post-meta {
+    border-top: 1px solid #e0e0e0;
+    margin-top: 30px;
+    padding-top: 10px;
+
+}
+
+.post-meta i {
+    margin-right: 5px;
+}
+
+.post-meta p {
+    font-family: "Raleway"sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+
+/*  Newsletter */
+#newsletter {
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+#head-news p:first-child {
+
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+
+
+}
+
+#contact-form p {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.button {
+    border-radius: 6px;
+    width: 100%;
+    height: 42px;
+    font-size: 18px;
+    background: #343A40;
+    color: white;
+    display: inline-block;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+/*Footer*/
+footer {
+    background: #1F232B;
+}
+.footer-container{
+    padding: 60px 10px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-gap: 0;
+    border-bottom: 1px solid #363941;
+}
+.footer-link ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.footer-link{
+    margin: 0 10px;
+}
+.footer-link ul li a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+.footer-link ul li a:hover{
+    transition: .2s ease;
+    color: #FF6B35;
+}
+.footer-social-link{
+    text-align: right;
+}
+.footer-social-link ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+.footer-social-link ul li a{
+    color: #fff;
+    font-size: 17px;
+}
+.footer-social-link ul li a:hover{
+    transition: .2s ease;
+    color: #FF6B35;
+}
+.subscribe-div{
+    width: 100%;
+    padding: 40px 10px;
+}
+.subscribe-div input{
+    width: 30%;
+    height: 42px;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 1px solid #363941;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+    outline: none;
+}
+.subscribe-div input:placeholder-shown{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.subscribe-div a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #FF6B35;
+    border-radius: 40px;
+    padding: 12px 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+.subscribe-div p{
+    color: #595C69;
+    font-size: 16px;
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+/*  back to top*/
+
+#btn-back-to-top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    font-size: 40px;
+    padding: 10px 18px;
+    border-radius: 50%;
+    background-color:rgba(255, 107, 53,.6);
+    font-size: 34px;
+
+}
+
+#btn-back-to-top i{
+    color: rgba(255,255,255,0.5);
+}
+#btn-back-to-top i:hover{
+    transition: all 400ms linear;
+    color: rgba(255,255,255,1);
+}
+#btn-back-to-top:hover {
+    background-color:rgba(255, 107, 53,1);
+    -webkit-transform: translateY(-15%);
+    transform: translateY(-15%);
+    -webkit-transition: all 400ms linear;
+    transition: all 400ms linear;
+
+}
+
+/* Scroll Spy*/
+#menu-nav li > a.active {
+    color: blue;
+    font-weight: 500;
+
+}
+
+/* Animation */
+#rank1 {
+    -webkit-animation-duration: 1.5sec;
+    animation-duration: 1.5sec;
+    -webkit-animation-delay: 1sec;
+    animation-delay: 1sec;
+}
